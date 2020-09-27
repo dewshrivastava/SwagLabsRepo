@@ -36,10 +36,4 @@ public class DriverActionUtility {
 		return text;
 	}
 	
-	
-	/*
-	//Method to store webElements in list
-	public List<WebElement> storeList(By locator) {
-		driver.findElements(locator);
-		}  */
 }
