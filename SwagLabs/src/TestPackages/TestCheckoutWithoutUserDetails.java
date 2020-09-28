@@ -2,8 +2,9 @@ package TestPackages;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import PagesPackages.CheckoutYourInformation;
@@ -18,7 +19,7 @@ public class TestCheckoutWithoutUserDetails {
  
 	WebDriver driver;
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() {
 		String browser = ConfigProperty.getKeyValue("browserName"); //No need to create an object of static method
 		DriverFactory driverFactory = new DriverFactory(); //Object Creation of DriverFactory Class
@@ -27,9 +28,13 @@ public class TestCheckoutWithoutUserDetails {
 		driver.get("https://www.saucedemo.com/");
 	}
 	
-	@AfterTest
-	public void tearDown() {
-		driver.quit();
+	@AfterMethod
+    public void tearDown(ITestResult result) {
+		DriverActionUtility driverAction = new DriverActionUtility(driver);
+		if(ITestResult.FAILURE==result.getStatus()) {			
+		driverAction.screenShots();
+		}  
+		driver.quit(); 
 	}
 	
 

@@ -5,6 +5,7 @@
     <classes>
       <class name="TestPackages.TestAddToCart">
         <methods>
+          <include name="purchaseMultipleProduct"/>
           <include name="tearDown"/>
           <include name="purchaseSingleProduct"/>
           <include name="setUp"/>

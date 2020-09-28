@@ -2,6 +2,8 @@ package TestPackages;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -24,7 +26,16 @@ public class TestUserLogin {
 		driver.get("https://www.saucedemo.com/");
 			
 	}
- 
+	
+	@AfterMethod
+    public void tearDown(ITestResult result) {
+		DriverActionUtility driverAction = new DriverActionUtility(driver);
+		if(ITestResult.FAILURE==result.getStatus()) {			
+		driverAction.screenShots();
+		}  
+		driver.quit(); 
+	}
+	
 	@Test
 	//Test to Login into application
 	public void userLogin() {
@@ -33,7 +44,6 @@ public class TestUserLogin {
 		ProductsPage productPageObj = homePage.Login();
 		Boolean bool = productPageObj.waitTillElementVisible();
 		Assert.assertTrue(bool);
-		driver.quit();    	
-    	
+		    	
 		}
 }
