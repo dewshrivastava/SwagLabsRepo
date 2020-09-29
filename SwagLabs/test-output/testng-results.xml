@@ -1,65 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="220609" started-at="2020-09-29T17:59:14 IST" finished-at="2020-09-29T18:02:55 IST">
+  <suite name="Default suite" duration-ms="48615" started-at="2020-09-29T18:21:41 IST" finished-at="2020-09-29T18:22:30 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="220609" started-at="2020-09-29T17:59:14 IST" finished-at="2020-09-29T18:02:55 IST">
-      <class name="TestPackages.TestRemoveItem">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestPackages.TestRemoveItem@5c5a1b69]" name="setUp" is-config="true" duration-ms="67737" started-at="2020-09-29T17:59:14 IST" finished-at="2020-09-29T18:00:22 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="removeProduct()[pri:0, instance:TestPackages.TestRemoveItem@5c5a1b69]" name="removeProduct" duration-ms="10194" started-at="2020-09-29T18:00:22 IST" finished-at="2020-09-29T18:00:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeProduct -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestPackages.TestRemoveItem@5c5a1b69]" name="tearDown" is-config="true" duration-ms="5999" started-at="2020-09-29T18:00:32 IST" finished-at="2020-09-29T18:00:38 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=removeProduct status=SUCCESS method=TestRemoveItem.removeProduct()[pri:0, instance:TestPackages.TestRemoveItem@5c5a1b69] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestPackages.TestRemoveItem -->
+    <test name="Default test" duration-ms="48615" started-at="2020-09-29T18:21:41 IST" finished-at="2020-09-29T18:22:30 IST">
       <class name="TestPackages.TestAddToCart">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestPackages.TestAddToCart@3701eaf6]" name="setUp" is-config="true" duration-ms="7709" started-at="2020-09-29T18:00:38 IST" finished-at="2020-09-29T18:00:46 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestPackages.TestAddToCart@5ae63ade]" name="setUp" is-config="true" duration-ms="9732" started-at="2020-09-29T18:21:42 IST" finished-at="2020-09-29T18:21:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="purchaseMultipleProduct()[pri:0, instance:TestPackages.TestAddToCart@3701eaf6]" name="purchaseMultipleProduct" duration-ms="11264" started-at="2020-09-29T18:00:46 IST" finished-at="2020-09-29T18:00:57 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- purchaseMultipleProduct -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestPackages.TestAddToCart@3701eaf6]" name="tearDown" is-config="true" duration-ms="1925" started-at="2020-09-29T18:00:57 IST" finished-at="2020-09-29T18:00:59 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=purchaseMultipleProduct status=SUCCESS method=TestAddToCart.purchaseMultipleProduct()[pri:0, instance:TestPackages.TestAddToCart@3701eaf6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestPackages.TestAddToCart@3701eaf6]" name="setUp" is-config="true" duration-ms="14325" started-at="2020-09-29T18:00:59 IST" finished-at="2020-09-29T18:01:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="purchaseSingleProduct()[pri:1, instance:TestPackages.TestAddToCart@3701eaf6]" name="purchaseSingleProduct" duration-ms="25096" started-at="2020-09-29T18:01:13 IST" finished-at="2020-09-29T18:01:38 IST">
+        <test-method status="PASS" signature="purchaseSingleProduct()[pri:1, instance:TestPackages.TestAddToCart@5ae63ade]" name="purchaseSingleProduct" duration-ms="11934" started-at="2020-09-29T18:21:51 IST" finished-at="2020-09-29T18:22:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseSingleProduct -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestPackages.TestAddToCart@3701eaf6]" name="tearDown" is-config="true" duration-ms="38793" started-at="2020-09-29T18:01:38 IST" finished-at="2020-09-29T18:02:17 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestPackages.TestAddToCart@5ae63ade]" name="tearDown" is-config="true" duration-ms="5816" started-at="2020-09-29T18:22:03 IST" finished-at="2020-09-29T18:22:09 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=purchaseSingleProduct status=SUCCESS method=TestAddToCart.purchaseSingleProduct()[pri:1, instance:TestPackages.TestAddToCart@3701eaf6] output={null}]]]>
+                <![CDATA[[TestResult name=purchaseSingleProduct status=SUCCESS method=TestAddToCart.purchaseSingleProduct()[pri:1, instance:TestPackages.TestAddToCart@5ae63ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestPackages.TestAddToCart@5ae63ade]" name="setUp" is-config="true" duration-ms="7843" started-at="2020-09-29T18:22:09 IST" finished-at="2020-09-29T18:22:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="purchaseMultipleProduct()[pri:2, instance:TestPackages.TestAddToCart@5ae63ade]" name="purchaseMultipleProduct" duration-ms="10264" started-at="2020-09-29T18:22:17 IST" finished-at="2020-09-29T18:22:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseMultipleProduct -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestPackages.TestAddToCart@5ae63ade]" name="tearDown" is-config="true" duration-ms="2876" started-at="2020-09-29T18:22:27 IST" finished-at="2020-09-29T18:22:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=purchaseMultipleProduct status=SUCCESS method=TestAddToCart.purchaseMultipleProduct()[pri:2, instance:TestPackages.TestAddToCart@5ae63ade] output={null}]]]>
               </value>
             </param>
           </params>
@@ -67,48 +46,6 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestPackages.TestAddToCart -->
-      <class name="TestPackages.TestUserLogin">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestPackages.TestUserLogin@627551fb]" name="setUp" is-config="true" duration-ms="8733" started-at="2020-09-29T18:02:17 IST" finished-at="2020-09-29T18:02:26 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="userLogin()[pri:0, instance:TestPackages.TestUserLogin@627551fb]" name="userLogin" duration-ms="6764" started-at="2020-09-29T18:02:26 IST" finished-at="2020-09-29T18:02:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestPackages.TestUserLogin@627551fb]" name="tearDown" is-config="true" duration-ms="4643" started-at="2020-09-29T18:02:33 IST" finished-at="2020-09-29T18:02:37 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userLogin status=SUCCESS method=TestUserLogin.userLogin()[pri:0, instance:TestPackages.TestUserLogin@627551fb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestPackages.TestUserLogin -->
-      <class name="TestPackages.TestCheckoutWithoutUserDetails">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestPackages.TestCheckoutWithoutUserDetails@2b552920]" name="setUp" is-config="true" duration-ms="7200" started-at="2020-09-29T18:02:37 IST" finished-at="2020-09-29T18:02:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkValidationWhileCheckoutWithoutUserDetails()[pri:0, instance:TestPackages.TestCheckoutWithoutUserDetails@2b552920]" name="checkValidationWhileCheckoutWithoutUserDetails" duration-ms="8066" started-at="2020-09-29T18:02:45 IST" finished-at="2020-09-29T18:02:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkValidationWhileCheckoutWithoutUserDetails -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestPackages.TestCheckoutWithoutUserDetails@2b552920]" name="tearDown" is-config="true" duration-ms="1890" started-at="2020-09-29T18:02:53 IST" finished-at="2020-09-29T18:02:55 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkValidationWhileCheckoutWithoutUserDetails status=SUCCESS method=TestCheckoutWithoutUserDetails.checkValidationWhileCheckoutWithoutUserDetails()[pri:0, instance:TestPackages.TestCheckoutWithoutUserDetails@2b552920] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestPackages.TestCheckoutWithoutUserDetails -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
