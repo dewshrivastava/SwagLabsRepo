@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import PagesPackages.HomePage;
@@ -16,8 +16,9 @@ import UtilityPackage.DriverFactory;
 public class TestUserLogin {
 	
 	WebDriver driver;
+	DriverActionUtility driverAction;
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setUp(){
 		String browser = ConfigProperty.getKeyValue("browserName"); //No need to create an object of static method
 		DriverFactory driverFactory = new DriverFactory(); //Object Creation of DriverFactory Class
@@ -29,7 +30,6 @@ public class TestUserLogin {
 	
 	@AfterMethod
     public void tearDown(ITestResult result) {
-		DriverActionUtility driverAction = new DriverActionUtility(driver);
 		if(ITestResult.FAILURE==result.getStatus()) {			
 		driverAction.screenShots();
 		}  
@@ -39,7 +39,7 @@ public class TestUserLogin {
 	@Test
 	//Test to Login into application
 	public void userLogin() {
-		DriverActionUtility driverAction = new DriverActionUtility(driver);
+		driverAction = new DriverActionUtility(driver);
 		HomePage homePage = new HomePage(driverAction);
 		ProductsPage productPageObj = homePage.Login();
 		Boolean bool = productPageObj.waitTillElementVisible();

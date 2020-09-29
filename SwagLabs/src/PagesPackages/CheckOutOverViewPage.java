@@ -29,6 +29,4 @@ public class CheckOutOverViewPage {
 		driverAction.clickOnButton(cancelButton);
 	}
 	
-	
-	
 }

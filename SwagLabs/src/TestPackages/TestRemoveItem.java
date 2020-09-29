@@ -17,6 +17,7 @@ import UtilityPackage.DriverFactory;
 public class TestRemoveItem {
 	
 	WebDriver driver;
+	DriverActionUtility driverAction;
 	
 	@BeforeMethod
 	public void setUp() {
@@ -29,7 +30,6 @@ public class TestRemoveItem {
 	
 	@AfterMethod
     public void tearDown(ITestResult result) {
-		DriverActionUtility driverAction = new DriverActionUtility(driver);
 		if(ITestResult.FAILURE==result.getStatus()) {			
 		driverAction.screenShots();
 		}  
@@ -40,7 +40,7 @@ public class TestRemoveItem {
 	@Test
 	//To remove selected product
 	public void removeProduct() {
-		DriverActionUtility driverAction = new DriverActionUtility(driver);
+	    driverAction = new DriverActionUtility(driver);
 		HomePage homePage = new HomePage(driverAction);
 		ProductsPage productPageObj = homePage.Login();
 		String[] vegList = {"Backpack","Bike","Jacket"};

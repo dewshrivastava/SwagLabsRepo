@@ -25,7 +25,7 @@ public class CheckoutYourInformation {
 		driverAction.sendKeys(lastName, "User");
 		driverAction.sendKeys(postalCode, "382007");	
 		driverAction.clickOnButton(continueButton);
-    	CheckOutOverViewPage overviewPageObj = new CheckOutOverViewPage(driverAction);
+		CheckOutOverViewPage overviewPageObj = new CheckOutOverViewPage(driverAction);
     	return overviewPageObj;
 	}
 

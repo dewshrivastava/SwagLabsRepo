@@ -14,6 +14,7 @@ public class YourCart {
 	
 	public YourCart(DriverActionUtility webdriver) {
 		driverAction = webdriver;
+		driverAction.waitTillVisible(checkout);
 	}
 	
 	//Method to click on Remove Button

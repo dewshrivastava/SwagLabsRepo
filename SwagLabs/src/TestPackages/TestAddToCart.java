@@ -4,9 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import PagesPackages.CheckOutCompletePage;
@@ -21,7 +19,7 @@ import UtilityPackage.DriverFactory;
 
 public class TestAddToCart {
 	WebDriver driver;
-	
+	DriverActionUtility driverAction;
 	@BeforeMethod
 	public void setUp() {
 		String browser = ConfigProperty.getKeyValue("browserName"); //No need to create an object of static method
@@ -33,7 +31,6 @@ public class TestAddToCart {
 	
 	@AfterMethod
     public void tearDown(ITestResult result) {
-		DriverActionUtility driverAction = new DriverActionUtility(driver);
 		if(ITestResult.FAILURE==result.getStatus()) {			
 		driverAction.screenShots();
 		}  
@@ -44,7 +41,7 @@ public class TestAddToCart {
 	@Test (priority=1)
 	//Test to purchase single product
 	public void purchaseSingleProduct() {
-		DriverActionUtility driverAction = new DriverActionUtility(driver);
+		driverAction = new DriverActionUtility(driver);
 		HomePage homePage = new HomePage(driverAction);
 		ProductsPage productPageObj = homePage.Login();
 		YourCart yourCartObj = productPageObj.addToCart("Backpack");

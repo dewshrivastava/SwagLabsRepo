@@ -18,6 +18,7 @@ import UtilityPackage.DriverFactory;
 public class TestCheckoutWithoutUserDetails {
  
 	WebDriver driver;
+	DriverActionUtility driverAction;
 	
 	@BeforeMethod
 	public void setUp() {
@@ -30,7 +31,6 @@ public class TestCheckoutWithoutUserDetails {
 	
 	@AfterMethod
     public void tearDown(ITestResult result) {
-		DriverActionUtility driverAction = new DriverActionUtility(driver);
 		if(ITestResult.FAILURE==result.getStatus()) {			
 		driverAction.screenShots();
 		}  
@@ -41,7 +41,7 @@ public class TestCheckoutWithoutUserDetails {
 	@Test
 	//Test to purchase single product
 	public void checkValidationWhileCheckoutWithoutUserDetails() {
-		DriverActionUtility driverAction = new DriverActionUtility(driver);
+		driverAction = new DriverActionUtility(driver);
 		HomePage homePage = new HomePage(driverAction);
 		ProductsPage productPageObj = homePage.Login();
 		YourCart yourCartObj = productPageObj.addToCart("Backpack");

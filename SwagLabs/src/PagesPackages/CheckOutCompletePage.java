@@ -12,6 +12,7 @@ public class CheckOutCompletePage {
 	
 	public CheckOutCompletePage (DriverActionUtility webdriver) {
 		driverAction = webdriver;
+		driverAction.waitTillVisible(thankYouText);
 	}
 	
 	public String getThankYouText() {
