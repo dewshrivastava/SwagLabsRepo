@@ -53,7 +53,7 @@ public class TestAddToCart {
 				
 	} 
 	
-	@Test
+	@Test (priority=2)
 	//Test to purchase multiple products
 	public void purchaseMultipleProduct() {
 		DriverActionUtility driverAction = new DriverActionUtility(driver);
